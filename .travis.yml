@@ -1,0 +1,13 @@
+language: java
+jdk: oraclejdk11
+
+services:
+- xvfb
+addons:
+  apt:
+    sources:
+      - google-chrome
+    
+before script:
+  - "export DISPLAY=:99.9"
+  - sleep 3
